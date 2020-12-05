@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <script src="script/script_home.js"></script>
+    <title>Red Cloud - Home</title>
+
+    <link rel="stylesheet" type="text/css" href="style/style_home.css">
+    <link rel="icon" href="img/logoicon.ico">
+</head>
+
+<body>
+    <div class="searchbar">
+        <div class="searchcontainer">
+            <div class="logo">
+                <img src="img/logo.png" alt="RED Cloud" width="70px">
+            </div>
+            <div class="search">
+                <input type="text" name="search" placeholder="Search...">
+            </div>
+            <div class="profile">
+                <img src="img/profile.png" alt="RED Cloud" width="70px" class="dp">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="optionsbox">
+        <a href="#server"><img src="img/my drive.png" title="My Drive" alt="Flower" class="optionlink"></a>
+        <a href="#server"><img src="img/sharedwithme.png" title="Shared with me" alt="Flower" class="optionlink"></a>
+        <a href="#server"><img src="img/trashbin.png" title="Trash Bin" alt="Flower" class="optionlink"></a>
+        <a href="#server"><img src="img/recent.png" title="Recent" alt="Flower" class="optionlink"></a>
+        <a href="#server"><img src="img/stared.png" title="Starred" alt="Flower" class="optionlink"></a>
+        <label class="switch" title="Enable Dark Mode">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+    </div>
+    <hr>
+    <div class="main">
+        <div class="sidebar">
+            <div class="pathtree">
+                <ul id="myUL">
+                    <li><span class="caret">Recent</span>
+                        <ul class="nested">
+                            <li>Folder1</li>
+                            <li>New Folder</li>
+                            <li><span class="caret">Work</span>
+                                <ul class="nested">
+                                    <li>Photoshop</li>
+                                    <li>After Effects</li>
+                                    <li>Visual Studio</li>
+
+                            </li>
+                            </ul>
+                    </li>
+                    </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="dashboard">
+            <img src="img/folder.png" alt="Folder" width="70px" class="folder">
+            <img src="img/folder.png" alt="Folder" width="70px" class="folder">
+            <img src="img/folder.png" alt="Folder" width="70px" class="folder">
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <p class="footertext">This webpage is under copyright of RED Cloud Technologies.</p>
+        </div>
+    </footer>
+
+    <!--Internal JS-->
+
+    <script type="text/javascript">
+        var toggler = document.getElementsByClassName("caret");
+        var i;
+
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function() {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+            });
+        }
+    </script>
+</body>
+
+</html>

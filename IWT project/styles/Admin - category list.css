@@ -1,0 +1,328 @@
+ * {
+	margin: 0;
+	padding: 0;
+	font-family: Sans-serif;
+		
+}
+
+body{
+	padding-left: 150px;
+	padding-top: 100px;
+	
+}
+
+
+/* SIDE BAR */
+#sidebar{
+	position: fixed;
+	width: 150px;
+	height: 100%;
+	background: black;
+	opacity: 0.8;
+	bottom: -100px;
+	left: -200px;
+	transition: all 400ms linear;
+}
+
+#sidebar ul{
+		list-style-type:none;
+		text-decoration: none;		
+	}
+
+
+#sidebar ul li {
+	color: rgba(230, 230, 230, 0.9);
+	list-style: none;
+	padding: 15px 10px;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+	left: 30px; 
+	top: 20px;
+	text-align: left;
+	display: block;
+	text-decoration: none;	
+	
+}
+
+#sidebar ul li a{
+	cursor: pointer;
+	padding: 5px 20px;
+	color: white;
+	list-style-type:none;
+	text-decoration: none;	
+	border-radius: 5px;	
+}
+
+#sidebar ul li a:hover{
+	background-color: red;
+}	
+
+#sidebar .active{
+	left: 0px;
+}
+
+#sidebar .toggle-btn{
+	position: absolute;
+	left: 220px; 
+	top: 20px;
+	
+}
+
+#sidebar .toggle-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: black;
+	margin: 5px 0px;
+}
+
+#sidebar.active{
+	left: 0px;
+}
+
+
+/* HEADER WITH NAV BAR */
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 90px;
+	box-sizing: border-box;
+	background: transparent;
+	list-style-type:none;
+	overflow:hidden ;
+	margin:0;
+	border:0;
+	}
+	
+header .logo {
+	padding: 22px 10px;
+	height: 100px;
+	float: left;
+}
+
+
+header ul{
+	list-style: none;
+	float:right;
+	margin: 0;
+	padding: 0;
+	display: flex; 
+	}
+header ul li a{
+	line-height: 50px;
+	color: black; 
+	padding : 8px 30px;
+	text-align : center ;
+	text-decoration : none;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+ }
+	
+header ul li a:hover{
+	background: rgba( 0, 0, 0, 0.3);
+	border-radius: 7px;
+	}
+	
+table {
+    border-spacing: 75px;
+}
+
+
+/* CARDS */ 
+.container{
+	padding-right: 20px;
+	padding-left: 40px;
+	padding-bottom: 20px;
+	border-radius: 3;
+	}
+	
+.footer-color{
+	color:red;
+	}
+
+.card,.hover-shadow:hover{
+	box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+	}
+	
+.card-body1 {
+	background-color:#5da8e8 /*blue*/;
+    padding: 30px;
+}
+
+.card-body2 {
+	background-color:#ffff54 /*yellow*/;
+    padding: 30px;
+}
+
+.card-body3 {
+	background-color:#60d65e /*green*/;
+    padding: 30px;
+}
+
+.card-body4 {
+	background-color:#fb6666 /*red*/;
+    padding: 30px;
+}
+
+
+/* DATA BASE TABLE */ 
+
+.dbtable{
+	margin: 30px auto;
+	border-collapse: collapse;
+	font-size: 14px;
+	min-width: 0px;
+	padding: 4px;
+}
+
+.dbtr{
+	height: 40px;
+	background: white;
+	padding: 10px;
+	background-color: rgb(196, 70, 70);
+	color: white;
+	font-size: 15px;
+} 
+
+.dbth{
+	border: none;
+	border-bottom: 1px solid black;
+	padding: 15px 25px;
+
+}
+
+
+.dbtd{
+	border: none;
+	height: 40px;
+	padding: 12px 15px;
+	text-align: left;
+}
+
+.dbth:hover {
+	background-color: #f3f3f3;
+}
+
+
+
+.msg{
+	margin: 30px auto;
+	padding: 10px;
+	border-radius: 5px;
+	color: #3c763d;
+	background: #dff0d8;
+	border: 1px solid #3c763d;
+	width: 50%;
+	height: 20px;
+	text-align: center;
+}
+
+.del_btn{
+	text-decoration: none;
+	padding: 2px 5px;
+	color: white;
+	border-radius: 3px;
+	background: #800000;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    -webkit-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+    padding: 7px 16px;
+    font-size: 14px;
+    line-height: ;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+.footer {
+  position: fixed;
+  left: 0;
+  bottom:0;
+  width: 100%;
+  height:35px;
+  background-color:#B22222 ;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchbar {
+    height: 60px;
+    margin: auto 5px;
+}
+
+.logo {
+    grid-area: first;
+    /*border: 2px solid #333;*/
+    height: 70px;
+    width: 70px;
+}
+
+.search {
+    grid-area: second;
+    /*border: 2px solid #333;*/
+    width: 900px;
+}
+
+input[type=text] {
+    width: 106%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('img/search.png');
+    background-position: 6px 6px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+    border: 3px solid rgb(156, 0, 0);
+}
+
+.profile {
+    grid-area: third;
+    /*border: 2px solid #333;*/
+    float: right;
+}
+
+.dp {
+    float: right;
+}
+
+.searchcontainer {
+    display: grid;
+    grid-template-areas: 'first second third' 'first second third';
+    grid-gap: 0;
+    padding: 0;
+}
+
+.optionsbox {
+    /*border: 2px solid rgb(97, 97, 97);*/
+    height: 90px;
+    margin: 8px auto;
+}
+
+.optionlink {
+    width: 50px;
+    padding: 20px 75px;
+}
+
+.optionlink:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+
+/*Toggle Switch*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 30px;
+    float: right;
+    right: 80px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(156, 0, 0);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(63, 63, 63);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/*Main*/
+
+.main {
+    /*border: 2px solid #333;*/
+    height: 375px;
+}
+
+.folder {
+    margin: 15px 15px;
+}
+
+.folder:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+
+/*side bar*/
+
+.sidebar {
+    /*border: 2px solid #333;*/
+    height: 365px;
+    float: left;
+    width: 200px;
+}
+
+.dashboard {
+    border: 2px solid rgb(112, 112, 112);
+    height: 365px;
+    width: 1020px;
+    /*float: right;*/
+    margin-left: 222px;
+    border-radius: 10px;
+}
+
+.foot {
+    /*border: 1px solid #333;*/
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.footertext {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(138, 137, 137);
+}
+
+
+/*Path Tree*/
+
+ul,
+#myUL {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+
+.caret {
+    cursor: pointer;
+    -webkit-user-select: none;
+    /* Safari 3.1+ */
+    -moz-user-select: none;
+    /* Firefox 2+ */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+}
+
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    transform: rotate(90deg);
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}

@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	
+}
+
+body{
+	padding-left: 150px;
+	padding-top: 100px;
+}
+ 
+/* HEADER WITH NAV BAR */
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 90px;
+	box-sizing: border-box;
+	background: transparent;
+	list-style-type:none;
+	overflow:hidden ;
+	margin:0;
+	border:0;
+	}
+	
+header . logo {
+	padding: 22px 10px;
+	height: 100px;
+	float: left;
+}
+
+
+header ul{
+	list-style: none;
+	float:right;
+	margin: 0;
+	padding: 0;
+	display: flex; 
+	}
+header ul li a{
+	line-height: 50px;
+	color: black; 
+	padding : 8px 30px;
+	text-align : center ;
+	text-decoration : none;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+ }
+	
+header ul li a:hover{
+	background: rgba( 0, 0, 0, 0.3);
+	border-radius: 7px;
+	}
+	
+table {
+    border-spacing: 75px;
+}
+
+/* SIDE BAR */
+#sidebar{
+	position: fixed;
+	width: 150px;
+	height: 100%;
+	background: black;
+	opacity: 0.8;
+	bottom: -100px;
+	left: -200px;
+	transition: all 400ms linear;
+}
+
+#sidebar ul{
+		list-style-type:none;
+		text-decoration: none;		
+	}
+
+
+#sidebar ul li {
+	color: rgba(230, 230, 230, 0.9);
+	list-style: none;
+	padding: 15px 10px;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+	left: 30px; 
+	top: 20px;
+	text-align: left;
+	display: block;
+	text-decoration: none;	
+	
+}
+
+#sidebar ul li a{
+	cursor: pointer;
+	padding: 5px 20px;
+	color: white;
+	list-style-type:none;
+	text-decoration: none;	
+	border-radius: 5px;	
+}
+
+#sidebar ul li a:hover{
+	background-color: red;
+}	
+
+#sidebar .active{
+	left: 0px;
+}
+
+#sidebar .toggle-btn{
+	position: absolute;
+	left: 220px; 
+	top: 20px;
+	
+}
+
+#sidebar .toggle-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: black;
+	margin: 5px 0px;
+}
+
+#sidebar.active{
+	left: 0px;
+}
+
+/* DATA BASE TABLE */ 
+
+.dbtable{
+	margin: 30px auto;
+	border-collapse: collapse;
+	font-size: 14px;
+	min-width: 0px;
+	padding: 4px;
+}
+
+.dbtr{
+	height: 40px;
+	background: white;
+	padding: 10px;
+	background-color: rgb(196, 70, 70);
+	color: white;
+	font-size: 15px;
+} 
+
+.dbth{
+	border: none;
+	border-bottom: 1px solid black;
+	padding: 15px 25px;
+
+}
+
+
+.dbtd{
+	border: none;
+	height: 40px;
+	padding: 12px 15px;
+	text-align: left;
+}
+
+.dbth:hover {
+	background-color: #f3f3f3;
+}
